@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<script>
+window.randomCSSColor = function() {
+	var str = "rgb(";
+	var r = Math.floor(Math.random() * 255);
+	var b = Math.floor(Math.random() * 255);
+	var g = Math.floor(Math.random() * 255);
+	return str + r + ", " + g + ", " + b + ")";
+}
+window.onload = function() {
+	window.wow = function() {
+		var arr = document.getElementsByClassName("wow");
+		for (var i = 0; i < arr.length; i++) {
+			var element = arr[i];
+			element.style.color = randomCSSColor();
+		}
+	}
+	setupTiming();
+}
+window.setupTiming = function() {
+	window.setTimeout(function() {wow(); setupTiming();}, 200);
+}
+</script>
+<style>
+html, body {
+	height: 100%;
+	width: 100%;
+}
+body {
+	background-image: url(http://evinugur.com/dorite/doritesummerbreeze.gif); background-repeat: repeat;
+}
+#centerme {
+	text-align: center;
+	left: 0;
+    margin: auto;
+    margin-top: -100px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+#innerbox {
+	width: auto;
+	height: auto;
+    background-color: rgba(255,0,0,.1);
+}
+.wow {
+	  text-shadow: black 0 1px;
+}
+* {
+	font-family: Chalkboard, Aria, Serif;
+}
+</style>
+<style id = "foo"></style>
+<title>Dorite Summer Rain</title>
+</head>
+<body>
+<div id = "centerme">
+	<div id = "innerbox">
+		<h1 class = "wow">Dorite Summer Rain</h1>
+		<h2 id = "big"class = "wow">Add Some Dorite To Your Life</h2>
+		<a target = "_blank" href = "https://chrome.google.com/webstore/detail/ngmmneffofmdmjmbfkaehfhecanebjlk/publish-delayed"><img src = "http://evinugur.com/chrome.png"></a>
+	</div>
+</div>
+<audio loop="loop" autoplay="autoplay">  
+   <source src="robocop.mp3" />  
+</audio> 
+</body>
+</html>

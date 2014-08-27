@@ -1,7 +1,7 @@
 {
 	"name": "DORITE SUMMER RAIN",
 	"description": "Stay noided on facebook with the dorite gang",
-	"version": "1.3",
+	"version": "1.4",
 	"author": "Evin Ugur (http://github.com/evinugur)",
 	"permissions": [
 		"http://facebook.com/*", "https://facebook.com/*"

@@ -3,20 +3,26 @@ document.addEventListener("load", function() {
 		window.defined = undefined;
 		var bliss = "http://evinugur.com/dorite/doritesummerbreeze.gif";
 		var whoaman = "http://evinugur.com/dorite/splashfire.jpg";
-		var classes = ['_s0 _5xib _5sq7', 'UFIActorImage', 'tickerStoryImage', '_s0 _rw', '_5ys_', '_s0 _rw'];
+		var classes = ['_s0 _5xib _5sq7', 'UFIActorImage', 'tickerStoryImage', '_s0 _rw', '_s0 _rw'];
 		for (var i = 0; i < classes.length; i++) {
 			var arr = document.getElementsByClassName(classes[i]);
 			for (var j = 0; j < arr.length; j++) {
 				arr[j].src = bliss;
 			}
 		}
-		var tricky = document.getElementsByClassName("_55lt");
+		var tricky = ['_55lt', '_5ys_'];
 		for (var i = 0; i < tricky.length; i++) {
-			tricky[i].children[0].src = bliss;
+			var arr = document.getElementsByClassName(tricky[i]);
+			for (var j = 0; j < arr.length; j++) {
+				arr[j].children[0].src = bliss;
+			}
 		}
-		var style = document.createElement("style");
-		style.innerHTML  = "#globalContainer{background-repeat: repeat; background-image: url(" + whoaman + ");}";
-		document.head.appendChild(style);
+		if (document.getElementById("summerrain") === null) {
+			var style = document.createElement("style");
+			style.id = "summerrain";
+			style.innerHTML  = "#globalContainer{background-repeat: repeat; background-image: url(" + whoaman + ");}";
+			document.head.appendChild(style);
+		}
 	};
 	
 }, true);

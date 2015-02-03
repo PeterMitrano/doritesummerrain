@@ -1,7 +1,7 @@
 document.addEventListener("load", function() {
 	document.onscroll = function(){
-		var bliss = "http://evinugur.com/dorite/doritesummerbreeze.gif";
-		var whoaman = "http://evinugur.com/dorite/splashfire.jpg";
+		var bliss = "http://i.imgur.com/HRmDOt0.gif";//"http://evinugur.com/dorite/doritesummerbreeze.gif";
+		var whoaman = "http://i.imgur.com/1RdnEyE.jpg";//"http://evinugur.com/dorite/splashfire.jpg";
 		var classes = ['_s0 _5xib _5sq7', 'UFIActorImage', 'tickerStoryImage', '_s0 _rw', '_s0 _rw', 'profilePhoto', '_s0 _50c7 _54rt'];
 		for (var i = 0; i < classes.length; i++) {
 			var arr = document.getElementsByClassName(classes[i]);

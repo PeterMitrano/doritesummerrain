@@ -9,7 +9,7 @@ document.addEventListener("load", function() {
 				arr[j].src = bliss;
 			}
 		}
-		var tricky = ['_55lt', '_5ys_'];
+		var tricky = ['_55lt', '_5ys_', "_55lu"];
 		for (var i = 0; i < tricky.length; i++) {
 			var arr = document.getElementsByClassName(tricky[i]);
 			for (var j = 0; j < arr.length; j++) {
